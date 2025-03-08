@@ -13,19 +13,19 @@ You can use this base URL to send requests to the API endpoints.
 }
 ```
 
-# API Routes for Users
+# API Routes for User
 
 The following are the available routes for managing users:
 
 ### 1. **test api**
 
-- **Endpoint**: `GET /users/test`
+- **Endpoint**: `GET /user/test`
 - **Header**: `nothing null`
 - **Body**: `nothing null`
 
 ### 2. **Login User**
 
-- **Endpoint**: `Post /users/login`
+- **Endpoint**: `Post /user/login`
 - **Header**: `Content-Type: multipart/form-data`
 - **Form Data**:
 
@@ -46,7 +46,7 @@ The following are the available routes for managing users:
 
 ### 3. **Register User**
 
-- **Endpoint**: `Post /users/register`
+- **Endpoint**: `Post /user/register`
 - **Header**: `Content-Type: multipart/form-data`
 - **Form Data**:
 
