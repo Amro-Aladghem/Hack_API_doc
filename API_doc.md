@@ -5,6 +5,14 @@ https://hackathoonproject-g4hkagbff0gygshm.germanywestcentral-01.azurewebsites.n
 
 You can use this base URL to send requests to the API endpoints.
 
+# Error Object :
+
+```json
+{
+  "message": "The error message is here!"
+}
+```
+
 # API Routes for Users
 
 The following are the available routes for managing users:
@@ -25,7 +33,7 @@ The following are the available routes for managing users:
   - `password`
 
 - **Example Response (JSON)**:
-  ```jsonPhonePhone
+  ```json
   {
     "user": {
       "userId": 2,
