@@ -87,6 +87,7 @@ The following are the available routes for managing Chat:
   - `Image`:`الصورة , في حال ارسال المستخدم صورة ارسلها اذا لم يكن هنالك صورة ارسل قيمتها null `
 
 - **Example Response (JSON)**:
+
   ```json
   {
     "responseMessageDTO": {
@@ -96,3 +97,21 @@ The following are the available routes for managing Chat:
     }
   }
   ```
+
+  ### 3. **Physics Chat**
+
+- **Endpoint**: `Post /bot/physics`
+- **Header**: `Content-Type: multipart/form-data`
+- **Form Data**: -`ينطبق عليه كل ما ينطبق على math`
+
+  ### 4. **Chemistry Chat**
+
+- **Endpoint**: `Post /bot/chemistry`
+- **Header**: `Content-Type: multipart/form-data`
+- **Form Data**: -`ينطبق عليه كل ما ينطبق على math`
+
+  ### 5. **History Chat**
+
+- **Endpoint**: `Post /bot/history`
+- **Header**: `Content-Type: multipart/form-data`
+- **Form Data**: -`ينطبق عليه كل ما ينطبق على math`
