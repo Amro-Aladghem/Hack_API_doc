@@ -115,3 +115,24 @@ The following are the available routes for managing Chat:
 - **Endpoint**: `Post /bot/history`
 - **Header**: `Content-Type: multipart/form-data`
 - **Form Data**: -`ينطبق عليه كل ما ينطبق على math`
+
+The following are the available routes for managing tools:
+
+### 2. **Time Table maker**
+
+- **Endpoint**: `Post /tools/timetable`
+- **Header**: `Content-Type: multipart/form-data`
+- **Form Data**:
+
+  - `DateOfStart`
+  - `TimeOfStart`
+  - `DateOfEnd`
+  - `TimeOfEnd`
+
+- **Example Response (JSON)**:
+
+  ```json
+  {
+    "htmlCode": ""
+  }
+  ```
