@@ -118,7 +118,7 @@ The following are the available routes for managing Chat:
 
 # The following are the available routes for managing tools:
 
-### 2. **Time Table maker**
+### 1. **Time Table maker**
 
 - **Endpoint**: `Post /tools/timetable`
 - **Header**: `Content-Type: multipart/form-data`
@@ -127,12 +127,75 @@ The following are the available routes for managing Chat:
   - `DateOfStart`
   - `TimeOfStart`
   - `DateOfEnd`
-  - `TimeOfEnd`
+  - `TimeOfEnd` -`file`
 
 - **Example Response (JSON)**:
 
   ```json
   {
     "htmlCode": ""
+  }
+  ```
+
+  ### 2. **Quiz maker**
+
+- **Endpoint**: `Post /tools/quizmaker`
+- **Header**: `Content-Type: multipart/form-data`
+- **Form Data**:
+
+  - `NumberOfQuestion` -`file`:
+
+- **Example Response (JSON)**:
+
+  ```json
+  {
+    "questions": [
+      {
+        "questionId": 1,
+        "questionName": "What is the goal of statistics, according to the lecture?",
+        "choices": [
+          {
+            "id": 1,
+            "choiceText": "To collect data from college students"
+          },
+          {
+            "id": 2,
+            "choiceText": "To learn the distribution of X"
+          },
+          {
+            "id": 3,
+            "choiceText": "To make no assumptions about the pmf"
+          },
+          {
+            "id": 4,
+            "choiceText": "To learn the parameter of the Poiss(λ) distribution"
+          }
+        ],
+        "rightChoiceId": 2
+      },
+      {
+        "questionId": 2,
+        "questionName": "What is a statistical model associated with a statistical experiment?",
+        "choices": [
+          {
+            "id": 1,
+            "choiceText": "A single probability measure on E"
+          },
+          {
+            "id": 2,
+            "choiceText": "A parameter set Θ"
+          },
+          {
+            "id": 3,
+            "choiceText": "A pair (E, (IPθ)θ∈Θ)"
+          },
+          {
+            "id": 4,
+            "choiceText": "The sample space E"
+          }
+        ],
+        "rightChoiceId": 3
+      }
+    ]
   }
   ```
